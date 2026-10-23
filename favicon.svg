@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <style>#background{fill:#EA580C}#cuts{stroke:#EA580C}@media (prefers-color-scheme: dark){#background{fill:#FB923C}#cuts{stroke:#FB923C}}</style>
+  <rect id="background" rx="112.64" width="512" height="512"/>
+  <g id="figure" transform="translate(256 256) scale(1.1) translate(-256 -256)" color="#14110E">
+    <path id="ring" d="M256 86A170 170 0 1 1 108.8 171" fill="none" stroke="currentColor" stroke-width="60" stroke-linecap="round"/>
+    <circle id="ball" cx="256" cy="256" r="104" fill="currentColor"/>
+    <g id="cuts" fill="none" stroke-width="36" stroke-linecap="round">
+      <path d="M152 256H360M256 152V360"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Minuto y Resultado</title>
+    <meta
+      name="description"
+      content="Sigue a tu equipo de la Federación de Baloncesto de Madrid."
+    />
+
+    <!-- De design-system/styleguide/head-snippet.html: tema sin parpadeo e icono de la app. -->
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#FAF6EF" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#14110E" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="./favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <script>
+      (function () {
+        try {
+          var t = localStorage.getItem('mr-theme');
+          if (t !== 'light' && t !== 'dark') return;
+          document.documentElement.setAttribute('data-theme', t);
+          var metas = document.querySelectorAll('meta[name="theme-color"]');
+          for (var i = 0; i < metas.length; i++) {
+            metas[i].removeAttribute('media');
+            metas[i].setAttribute('content', t === 'dark' ? '#14110E' : '#FAF6EF');
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="./assets/index-CTb1CDpo.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Dr-Kpw5w.css">
+  <link rel="manifest" href="./manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="./registerSW.js"></script></head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>

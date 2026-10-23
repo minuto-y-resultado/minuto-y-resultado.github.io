@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!--
+    Minuto y Resultado: icono maestro (rejilla 512 × 512).
+    Fondo: palette-orange-600. Figura: palette-wood-950 (primitivos de tokens.css).
+    Cuenta atrás: un anillo que se vacía (ring) alrededor de un balón macizo (ball).
+    Las costuras se recortan en el color del fondo (cuts): la cruz siempre y las
+    laterales (seams) solo a partir de 48 px; los favicons de 16 y 32 px las quitan.
+    La figura cabe en el círculo central del 80 % (radio 205), la zona segura maskable.
+    Tras editarlo: node scripts/build-app-icons.mjs
+  -->
+  <rect id="background" width="512" height="512" fill="#EA580C"/>
+  <g id="figure" color="#14110E">
+    <path id="ring" d="M256 86A170 170 0 1 1 108.8 171" fill="none" stroke="currentColor" stroke-width="44" stroke-linecap="round"/>
+    <circle id="ball" cx="256" cy="256" r="104" fill="currentColor"/>
+    <g id="cuts" fill="none" stroke="#EA580C" stroke-width="20" stroke-linecap="round">
+      <path d="M152 256H360M256 152V360"/>
+      <g id="seams">
+        <path d="M184 184Q222 256 184 328"/>
+        <path d="M328 184Q290 256 328 328"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 1400" fill="none" stroke="black" stroke-width="8">
+  <!-- Media pista FIBA (cm). Solo se usa como máscara (mask-image): el color lo pone el CSS. -->
+  <rect x="4" y="4" width="1492" height="1392"/>
+  <rect x="505" y="4" width="490" height="576"/>
+  <circle cx="750" cy="580" r="180"/>
+  <path d="M90 4V299A675 675 0 0 0 1410 299V4"/>
+  <path d="M625 120V157.5A125 125 0 0 0 875 157.5V120"/>
+  <path d="M660 120H840"/>
+  <circle cx="750" cy="157.5" r="22.5"/>
+  <path d="M570 1396A180 180 0 0 1 930 1396"/>
+</svg>
