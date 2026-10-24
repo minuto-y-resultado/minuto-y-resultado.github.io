@@ -5,7 +5,9 @@
     Cuenta atrás: un anillo que se vacía (ring) alrededor de un balón macizo (ball).
     Las costuras se recortan en el color del fondo (cuts): la cruz siempre y las
     laterales (seams) solo a partir de 48 px; los favicons de 16 y 32 px las quitan.
-    La figura cabe en el círculo central del 80 % (radio 205), la zona segura maskable.
+    La figura llega hasta el radio 192. Solo la variante maskable la encoge (× 0,8)
+    para que quepa en la zona segura de Android: el círculo central del 61 % del
+    lado (66 de 108 dp, radio ≈ 156). Las demás variantes la usan tal cual.
     Tras editarlo: node scripts/build-app-icons.mjs
   -->
   <rect id="background" width="512" height="512" fill="#EA580C"/>
